@@ -1,0 +1,124 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.ant-btn {
+    /*box-shadow: none !important;*/
+    height: auto;
+    padding: 8px 15px;
+    @apply text-xs shadow-none hover:shadow motion-safe:hover:scale-[1.02] transition-all duration-300;
+}
+
+.ant-btn-primary{
+    @apply bg-secondary;
+}
+
+.btn-secondary{
+    @apply bg-gray-200 border-0 hover:bg-gray-400 hover:!text-white;
+}
+
+.btn {
+    @apply font-bold py-2 px-4 rounded;
+}
+
+.btn-blue {
+    @apply bg-blue-500 text-white;
+}
+
+.btn-blue:hover {
+    @apply bg-blue-700;
+}
+
+.main-container{
+    @apply max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12;
+}
+
+.main-container-4xl {
+    @apply max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 py-12;
+}
+
+.alert-error{
+    @apply py-4 bg-red-500 text-white;
+}
+
+.alert-error .ant-alert-close-icon .anticon-close{
+    @apply text-white hover:text-white;
+}
+
+.bg-dots-darker {
+    /*background-image: url('/img/bg.jpg');*/
+    /*background-size: 100%;*/
+    background-image: url("data:image/svg+xml,%3Csvg width='30' height='30' viewBox='0 0 30 30' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M1.22676 0C1.91374 0 2.45351 0.539773 2.45351 1.22676C2.45351 1.91374 1.91374 2.45351 1.22676 2.45351C0.539773 2.45351 0 1.91374 0 1.22676C0 0.539773 0.539773 0 1.22676 0Z' fill='rgba(0,0,0,0.07)'/%3E%3C/svg%3E");
+}
+
+.ant-modal-title {
+    @apply !text-lg !font-medium !text-primary;
+}
+
+.ant-modal-footer .ant-btn{
+    @apply !uppercase;
+}
+
+.main-wrap-transparent .ant-modal-content,
+.main-wrap-transparent .ant-modal-header{
+    @apply !bg-transparent shadow-none;
+}
+
+.main-scrool::-webkit-scrollbar {
+    width: 8px;
+    background-color: transparent;
+}
+
+.main-scrool::-webkit-scrollbar-thumb {
+    min-height: 50px;
+    @apply rounded-full bg-gray-300 motion-safe:hover:bg-gray-400 transition-all duration-300;
+}
+
+.main-scrool::-webkit-scrollbar-track {
+    background-color: transparent;
+}
+
+.main-scrool::-webkit-scrollbar-button {
+    display: none;
+}
+
+.main-card{
+    @apply bg-white shadow border-0 p-4 sm:p-8;
+}
+
+.main-card .ant-card-head{
+    @apply  border-0 p-0 min-h-fit mb-2;
+}
+
+.main-card .ant-card-head-title{
+    @apply text-lg font-medium text-primary;
+    /*@apply before:absolute before:w-20 before:h-0.5 before:bg-primary before:top-10;*/
+}
+
+.main-card .ant-card-head-title::before{
+
+}
+
+.main-card .ant-card-meta-description{
+    @apply !text-gray-600;
+}
+
+.main-card .ant-card-body{
+    @apply  p-0;
+}
+
+.main-card .card-description{
+    @apply text-sm text-gray-600;
+}
+
+.main-table .ant-table-thead .ant-table-cell {
+    @apply bg-transparent before:!w-0;
+}
+
+.main-table .ant-table-row-selected .ant-table-cell {
+    @apply !bg-secondary/10;
+}
+
+.main-avatar{
+    @apply uppercase ring-0 ring-gray-400;
+}
